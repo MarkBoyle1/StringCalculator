@@ -8,10 +8,10 @@ namespace StringCalculator
         {
             
         }
-
         public static int Add(string input)
         {
-            return 0;
+            if (String.IsNullOrEmpty(input)) return 0;
+            return int.Parse(input);
         }
     }
 }

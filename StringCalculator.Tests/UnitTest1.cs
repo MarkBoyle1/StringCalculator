@@ -44,5 +44,10 @@ namespace StringCalculator.Tests
             Assert.Equal(20, Calculator.Add("3\n5\n3,9"));
 
         }
+        [Fact]
+        public void Test6()
+        {
+            Assert.Equal(3, Calculator.Add("//;\n1;2"));
+        }
     }
 }

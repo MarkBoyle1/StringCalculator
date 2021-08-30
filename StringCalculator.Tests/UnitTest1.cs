@@ -28,5 +28,13 @@ namespace StringCalculator.Tests
             Assert.Equal(8, Calculator.Add("3,5"));
 
         }
+        
+        [Fact]
+        public void Test4()
+        {
+            Assert.Equal(6, Calculator.Add("1,2,3"));
+            Assert.Equal(20, Calculator.Add("3,5,3,9"));
+
+        }
     }
 }

@@ -2,11 +2,16 @@
 
 namespace StringCalculator
 {
-    class Program
+    public class Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+        }
+
+        public static int Add(string input)
+        {
+            return 0;
         }
     }
 }

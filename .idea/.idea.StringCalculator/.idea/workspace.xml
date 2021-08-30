@@ -4,7 +4,7 @@
     <projectFile>StringCalculator/StringCalculator.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ed32a65-0853-40c5-ada2-eb5d68a6ebdc" name="Changes" comment="Step 2 Complete: Single number input returns number.">
+    <list default="true" id="7ed32a65-0853-40c5-ada2-eb5d68a6ebdc" name="Changes" comment="Step 4 Complete: Sum of multiple numbers is returned.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StringCalculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StringCalculator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StringCalculator.Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StringCalculator.Tests/UnitTest1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StringCalculator/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StringCalculator/Program.cs" afterDir="false" />
@@ -23,6 +23,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/Mark.Boyle/Desktop/c#/katas/StringCalculator/StringCalculator.Tests/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Mark.Boyle/Desktop/c#/katas/StringCalculator/StringCalculator/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/Mark.Boyle/Desktop/c#/katas/StringCalculator/StringCalculator/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xQqlXqQRziLd4cAT9iex6Qs00C" />
@@ -67,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1630297811043</updated>
       <workItem from="1630297814331" duration="1602000" />
-      <workItem from="1630300532603" duration="2207000" />
+      <workItem from="1630300532603" duration="2841000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1630297914872</created>
@@ -90,7 +92,21 @@
       <option name="project" value="LOCAL" />
       <updated>1630302162758</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Step 3 Complete: Sum of 2 numbers is returned.">
+      <created>1630302850545</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1630302850545</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Step 4 Complete: Sum of multiple numbers is returned.">
+      <created>1630303030767</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1630303030767</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +132,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Step 1 Complete: Returns 0 for an empty string" />
     <MESSAGE value="Step 2 Complete: Single number input returns number." />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 2 Complete: Single number input returns number." />
+    <MESSAGE value="Step 3 Complete: Sum of 2 numbers is returned." />
+    <MESSAGE value="Step 4 Complete: Sum of multiple numbers is returned." />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 4 Complete: Sum of multiple numbers is returned." />
   </component>
 </project>

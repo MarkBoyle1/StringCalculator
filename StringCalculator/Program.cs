@@ -11,7 +11,13 @@ namespace StringCalculator
         public static int Add(string input)
         {
             if (String.IsNullOrEmpty(input)) return 0;
-            return int.Parse(input);
+            string[] numbers = input.Split(',');
+            int answer = 0;
+            foreach (string number in numbers)
+            {
+                answer += int.Parse(number);
+            }
+            return answer;
         }
     }
 }

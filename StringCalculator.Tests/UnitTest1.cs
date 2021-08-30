@@ -20,5 +20,13 @@ namespace StringCalculator.Tests
             Assert.Equal(3, Calculator.Add("3"));
 
         }
+        
+        [Fact]
+        public void Test3()
+        {
+            Assert.Equal(3, Calculator.Add("1,2"));
+            Assert.Equal(8, Calculator.Add("3,5"));
+
+        }
     }
 }

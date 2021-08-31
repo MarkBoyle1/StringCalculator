@@ -10,13 +10,14 @@ namespace StringCalculator
         static void Main(string[] args)
         {
             Calculator calculator = new Calculator();
-            Console.WriteLine(calculator.Add("//;\n1;2,3,6,7"));
+            Console.WriteLine(calculator.Add("//[***]\n1***2***3"));
         }
         public int Add(string input)
         {
             if (String.IsNullOrEmpty(input)) return 0;
             if (input.Contains("//")) 
-                input = input.Replace(input[2], ',');
+                input = DetermineDelimiters(input);
+                
             string[] delimiters = new string[] {",", "\n"};
             string[] numbers = input.Split(delimiters, input.Length, StringSplitOptions.None);
             int answer = 0;
@@ -43,6 +44,18 @@ namespace StringCalculator
         {
             string errorMessage = "Negatives not allowed: " + negativeNumbers.Aggregate((a, b) => a + ", " + b);
             throw new Exception(errorMessage);
+        }
+
+        private string DetermineDelimiters(string input)
+        {
+            if (input.Contains("["))
+            {
+                int delimiterLength = input.IndexOf("]") - 3;
+                string delimiter = input.Substring(3, delimiterLength);
+                return input.Replace(delimiter, ",");
+            }
+            
+            return input.Replace(input[2], ',');
         }
     }
 }

@@ -61,5 +61,10 @@ namespace StringCalculator.Tests
         {
             Assert.Equal(2, _calculator.Add("1000,1001,2"));
         }
+        [Fact]
+        public void Test9()
+        {
+            Assert.Equal(6, _calculator.Add("//[***]\n1***2***3"));
+        }
     }
 }

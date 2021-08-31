@@ -29,7 +29,7 @@ namespace StringCalculator
                     {
                         negativeNumbers.Add(number);
                     }
-                    else
+                    else if(int.Parse(number) < 1000)
                     {
                         answer += int.Parse(number);
                     }

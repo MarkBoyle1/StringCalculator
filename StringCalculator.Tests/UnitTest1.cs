@@ -56,5 +56,10 @@ namespace StringCalculator.Tests
             var ex = Assert.Throws<Exception>(() => _calculator.Add("-1,2,-3"));
             Assert.Equal("Negatives not allowed: -1, -3", ex.Message);
         }
+        [Fact]
+        public void Test8()
+        {
+            Assert.Equal(2, _calculator.Add("1000,1001,2"));
+        }
     }
 }

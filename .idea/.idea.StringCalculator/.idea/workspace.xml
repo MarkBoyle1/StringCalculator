@@ -4,11 +4,7 @@
     <projectFile>StringCalculator/StringCalculator.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ed32a65-0853-40c5-ada2-eb5d68a6ebdc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.StringCalculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StringCalculator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StringCalculator.Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StringCalculator.Tests/UnitTest1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StringCalculator/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StringCalculator/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="7ed32a65-0853-40c5-ada2-eb5d68a6ebdc" name="Changes" comment="Step 7 Complete: Throws exception for negative numbers" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +20,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bc17a9d3383b41c4931d759aec9935538d7c00/B3/Number.Parsing.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Mark.Boyle/Desktop/c#/katas/StringCalculator/StringCalculator/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xQqlXqQRziLd4cAT9iex6Qs00C" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -71,7 +68,7 @@
       <updated>1630297811043</updated>
       <workItem from="1630297814331" duration="1602000" />
       <workItem from="1630300532603" duration="12064000" />
-      <workItem from="1630364419837" duration="9200000" />
+      <workItem from="1630364419837" duration="9609000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1630297914872</created>
@@ -122,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630307522947</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Step 7 Complete: Throws exception for negative numbers">
+      <created>1630382116335</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1630382116335</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +156,7 @@
     <MESSAGE value="Step 4 Complete: Sum of multiple numbers is returned." />
     <MESSAGE value="Step 5 Complete: Delimiters can be ',' or '\n'" />
     <MESSAGE value="Step 6 Complete: Custom delimiter can be accepted" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 6 Complete: Custom delimiter can be accepted" />
+    <MESSAGE value="Step 7 Complete: Throws exception for negative numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 7 Complete: Throws exception for negative numbers" />
   </component>
 </project>

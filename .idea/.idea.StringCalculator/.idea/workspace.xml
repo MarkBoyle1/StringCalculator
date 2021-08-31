@@ -4,7 +4,7 @@
     <projectFile>StringCalculator/StringCalculator.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ed32a65-0853-40c5-ada2-eb5d68a6ebdc" name="Changes" comment="Step 9 Complete: Delimiters can be any length.">
+    <list default="true" id="7ed32a65-0853-40c5-ada2-eb5d68a6ebdc" name="Changes" comment="Step 11 Complete: Multiple delimiters of varying length accepted.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StringCalculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StringCalculator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StringCalculator.Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StringCalculator.Tests/UnitTest1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StringCalculator/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StringCalculator/Program.cs" afterDir="false" />
@@ -23,6 +23,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/Mark.Boyle/Desktop/c#/katas/StringCalculator/StringCalculator.Tests/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Mark.Boyle/Desktop/c#/katas/StringCalculator/StringCalculator/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/Mark.Boyle/Desktop/c#/katas/StringCalculator/StringCalculator/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bc17a9d3383b41c4931d759aec9935538d7c00/B3/Number.Parsing.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/Mark.Boyle/Desktop/c#/katas/StringCalculator/StringCalculator/Program.cs" root0="SKIP_HIGHLIGHTING" />
@@ -74,7 +76,7 @@
       <updated>1630297811043</updated>
       <workItem from="1630297814331" duration="1602000" />
       <workItem from="1630300532603" duration="12064000" />
-      <workItem from="1630364419837" duration="13248000" />
+      <workItem from="1630364419837" duration="14503000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1630297914872</created>
@@ -146,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1630384806392</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Step 10 Complete: Multiple delimiters can be accepted.">
+      <created>1630386268096</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1630386268096</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Step 11 Complete: Multiple delimiters of varying length accepted.">
+      <created>1630386401941</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1630386401941</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +195,8 @@
     <MESSAGE value="Step 7 Complete: Throws exception for negative numbers" />
     <MESSAGE value="Step 8 Complete: Numbers greater than 1000 are ignored." />
     <MESSAGE value="Step 9 Complete: Delimiters can be any length." />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 9 Complete: Delimiters can be any length." />
+    <MESSAGE value="Step 10 Complete: Multiple delimiters can be accepted." />
+    <MESSAGE value="Step 11 Complete: Multiple delimiters of varying length accepted." />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 11 Complete: Multiple delimiters of varying length accepted." />
   </component>
 </project>

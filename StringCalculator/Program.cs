@@ -58,7 +58,6 @@ namespace StringCalculator
                 input = input.Replace(delimiter, ",");
                 input = input.Remove(2, 3);
             }
-
             return input;
         }
     }

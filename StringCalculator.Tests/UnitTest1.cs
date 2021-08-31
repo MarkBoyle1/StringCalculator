@@ -71,5 +71,10 @@ namespace StringCalculator.Tests
         {
             Assert.Equal(6, _calculator.Add("//[*][%]\n1*2%3"));
         }
+        [Fact]
+        public void Test11()
+        {
+            Assert.Equal(10, _calculator.Add("//[***][#][%]\n1***2#3%4"));
+        }
     }
 }

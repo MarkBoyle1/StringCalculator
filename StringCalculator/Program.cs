@@ -1,64 +1,72 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 
 namespace StringCalculator
 {
     public class Calculator
     {
+        private string[] delimiters = new[] {",", "\n"};
+        private int answer;
+        private List<string> negativeNumbers = new List<string>();
+        
         static void Main(string[] args)
         {
             Calculator calculator = new Calculator();
-            Console.WriteLine(calculator.Add("//[***]\n1***2***3"));
+            Console.WriteLine(calculator.Add("3,5,3,9"));
         }
         public int Add(string input)
         {
-            if (String.IsNullOrEmpty(input)) return 0;
-            if (input.Contains("//")) 
-                input = DetermineDelimiters(input);
-
-            string[] delimiters = new string[] {",", "\n"};
-            string[] numbers = input.Split(delimiters, input.Length, StringSplitOptions.None);
-            int answer = 0;
-            List<string> negativeNumbers = new List<string>();
-            foreach (string number in numbers)
-            {
-                int intNumber;
-                if (int.TryParse(number, out intNumber))
-                    if (int.Parse(number) < 0)
-                    {
-                        negativeNumbers.Add(number);
-                    }
-                    else if(int.Parse(number) < 1000)
-                    {
-                        answer += int.Parse(number);
-                    }
-            }
-
+            answer = 0;
+            CheckForNegatives(input);
             if (negativeNumbers.Count > 0) ThrowNegativeNumberException(negativeNumbers);
-            return answer;
+            input = ConvertDelimitersToComma(input);
+            return AddNumbersToAnswer(input);
         }
 
+        //All numbers in the negativeNumbers list are joined using Aggregate method to create the Exception error message.
         private void ThrowNegativeNumberException(List<string> negativeNumbers)
         {
             string errorMessage = "Negatives not allowed: " + negativeNumbers.Aggregate((a, b) => a + ", " + b);
             throw new Exception(errorMessage);
         }
 
-        private string DetermineDelimiters(string input)
+        //Any custom delimiters in square brackets are identified and all instances of that delimiter are converted to a comma. 
+        private string ConvertDelimitersToComma(string input)
         {
-            if(!input.Contains("[")) 
-                return input.Replace(input[2], ',');
-            
-            while (input.Contains("["))
+            MatchCollection delimiters = Regex.Matches(input, @"\[(.+?)]");
+
+            foreach (var match in delimiters)
             {
-                int delimiterLength = input.IndexOf("]") - 3;
-                string delimiter = input.Substring(3, delimiterLength);
-                input = input.Replace(delimiter, ",");
-                input = input.Remove(2, 3);
+                input = input.Replace(match.ToString().Trim('[',']'), ",");
             }
             return input;
+        }
+
+        //Numbers are collected using regex and added to answer variable if below 1000.
+        private int AddNumbersToAnswer(string input)
+        {
+            MatchCollection foundNumbers = Regex.Matches(input, @"[\d]+");
+
+            foreach (var match in foundNumbers)
+            {
+                int number = int.Parse(match.ToString());
+                if(number < 1000) answer += number;
+            }
+            return answer;
+        }
+
+        //Negative numbers are collected using regex and stored in the negativeNumbers List.
+        private void CheckForNegatives(string input)
+        {
+            MatchCollection collectedNegativeNumbers = Regex.Matches(input, @"-[\d]+");
+            
+            foreach (var match in collectedNegativeNumbers)
+            {
+                negativeNumbers.Add(match.ToString());
+            }
         }
     }
 }

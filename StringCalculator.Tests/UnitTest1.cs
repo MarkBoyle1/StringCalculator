@@ -19,7 +19,6 @@ namespace StringCalculator.Tests
         {
             Assert.Equal(1, _calculator.Add("1"));
             Assert.Equal(3, _calculator.Add("3"));
-
         }
         
         [Fact]
@@ -27,7 +26,6 @@ namespace StringCalculator.Tests
         {
             Assert.Equal(3, _calculator.Add("1,2"));
             Assert.Equal(8, _calculator.Add("3,5"));
-
         }
 
         [Fact]
@@ -35,7 +33,6 @@ namespace StringCalculator.Tests
         {
             Assert.Equal(6, _calculator.Add("1,2,3"));
             Assert.Equal(20, _calculator.Add("3,5,3,9"));
-
         }
 
         [Fact]
@@ -43,7 +40,6 @@ namespace StringCalculator.Tests
         {
             Assert.Equal(6, _calculator.Add("1,2\n3"));
             Assert.Equal(20, _calculator.Add("3\n5\n3,9"));
-
         }
         [Fact]
         public void Test6_given_CustomDelimiterProvided_when_Add_then_return_SumOfNumbers()
